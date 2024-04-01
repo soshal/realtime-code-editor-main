@@ -1,0 +1,173 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa; /* GitHub background color */
+    color: #24292e; /* GitHub text color */
+}
+
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #24292e; /* GitHub text color */
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 6px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* GitHub box shadow */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff; /* White background */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* GitHub box shadow */
+}
+
+footer a {
+    color: #0366d6; /* GitHub link color */
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 10px; /* Reduced margin */
+    margin-top: 0;
+    font-size: 18px; /* Increased font size */
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc; /* GitHub input border color */
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: #28a745; /* GitHub green color */
+    color: #fff;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 14px; /* Reduced font size */
+}
+
+.createNewBtn {
+    color: #0366d6; /* GitHub link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #034b8e; /* Darker blue on hover */
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: #707070;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc; /* GitHub input border color */
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+/* Additional CSS for inputs */
+.inputBox[type="email"] {
+    /* Specific styles for email input */
+}
+
+.inputBox[type="text"][placeholder="System ID"] {
+    /* Specific styles for System ID input */
+}
+
