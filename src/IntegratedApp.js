@@ -1,12 +1,13 @@
-import './App.css';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import Home from './pages/Home';
-import EditorPage from './pages/EditorPage';
-import Index  from './ChatApp-main/index.js';
+import Home from './pages/Home.js';
+import EditorPage from './pages/EditorPage.js';
+import './App.css';
+import ChatApp from '../src/ChatApp-main/public/ChatApp.js';
 
 
-function App() {
+const IntegratedApp = () => {
     return (
         <>
             <div>
@@ -23,17 +24,15 @@ function App() {
             </div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route
-                        path="/editor/:roomId"
-                        element={<EditorPage />}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/editor/:roomId" element={<EditorPage />} />
+                    <Route path="/chatroom" element={<ChatApp />} />
 
-                    ></Route>
-                    <Route path="/chatroom" element={<Index />}></Route>
+
                 </Routes>
             </BrowserRouter>
         </>
     );
 }
 
-export default App;
+export default IntegratedApp;
