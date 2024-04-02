@@ -24,8 +24,9 @@ const ChatApp = () => {
     return (
         <section className="chat__section">
             <div className="brand">
-                <img src="/chat.png" alt="" />
-                <h1>okie dokie</h1>
+                
+                <h1>SYNC-TEXT</h1>
+               
             </div>
             <div className="message__area">
                 {messages.map((msg, index) => (

@@ -41,12 +41,7 @@ const Home = () => {
     return (
         <div className="homePageWrapper">
             <div className="formWrapper">
-                <img
-                    className="logoimg"
-                    src="://png.pngtree.com/png-clipart/20230924/original/pngtree-coding-monitor-programming-logo-vector-png-image_12849307.png"
-                    alt="logo"
-                    style={{ width: '50px', height: '50px' }}
-                />
+               
                 <h1>Sync-Text</h1>
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
                 <div className="inputGroup">
