@@ -102,19 +102,19 @@ const EditorPage = () => {
             <div className="aside">
                 <div className="asideInner">
                     <div className="logo">
-                        <h1>SYNC-TAXT</h1>
+                        <h1>SYNC-TEXT</h1>
                     </div>
                     <h3>Connected</h3>
                     <div className="clientsList">
                         {clients.map((client) => (
                             <Client
-                                key={client.socketId}
+                                
                                 username={client.username}
                             />
                         ))}
                     </div>
                 </div>
-                <button className="btn leaveBtn" onClick={newChat}>
+                <button className="btn chatBtn" onClick={newChat}>
                     Chat
                 </button>
                 <button className="btn copyBtn" onClick={copyRoomId}>
@@ -138,3 +138,4 @@ const EditorPage = () => {
 };
 
 export default EditorPage;
+ 

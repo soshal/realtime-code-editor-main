@@ -14,7 +14,7 @@ const ChatApp = () => {
 
     const sendMessage = () => {
         if (inputMessage.trim() !== '') {
-            const newMessage = { user: 'You', message: inputMessage.trim() };
+            const newMessage = { user: 'Anonumys', message: inputMessage.trim() };
             setMessages((prevMessages) => [...prevMessages, newMessage]);
             socket.emit('message', newMessage);
             setInputMessage('');
